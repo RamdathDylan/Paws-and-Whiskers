@@ -1,0 +1,100 @@
+#topHeader{
+    background-color: #FCF6E7;
+}
+#sign-in{
+    background-color: #C9C3B5;
+    border-radius: 20px;
+    outline-color: #C9C3B5;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+}
+#topHeader{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.nav-item{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* Responsive background image */
+.background-image {
+  background-image: url('https://github.com/RamdathDylan/Paws-and-Whiskers/blob/main/BackGround.jpg?raw=true'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  color: white;
+}
+
+/* Overlay to improve readability */
+.background-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+  z-index: 1;
+}
+
+/* Text overlay styles */
+.text-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 30%;
+  transform: translateY(-50%);
+  padding: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .background-image {
+    height: 60vh; /* Adjust height for smaller screens */
+  }
+  .text-overlay h1 {
+    font-size: 1.5rem; /* Smaller font size on mobile */
+  }
+  .text-overlay p {
+    font-size: 1rem;
+  }
+  .card{
+    width: 1rem;
+    height: 1rem;
+  }
+
+}
+.card{
+  width: 8rem;
+  height: 8rem;
+  padding-left: 1px;
+  padding-right: 1px;
+  background-color: #F2ECDD;
+  border-radius: 30px;
+}
+.card-img-top-cat{
+  width: 7rem;
+  height: 7.4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-body-cat{
+  transform: translateY(-50%);
+}
+.card-body-dog{
+  transform: translateY(-100%);
+
+}
+#adoption-planning{
+  background-color: #C9C3B5;
+}
+.card-text{
+  color: black;
+}
+.clickable-div{
+  z-index: 1;
+}
